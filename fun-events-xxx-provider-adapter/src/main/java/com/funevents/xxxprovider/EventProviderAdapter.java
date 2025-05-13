@@ -4,8 +4,8 @@ import java.util.List;
 
 import org.springframework.web.client.RestTemplate;
 
+import com.funevents.EventProvider;
 import com.funevents.model.Event;
-import com.funevents.supply.EventProvider;
 import com.funevents.xxxprovider.model.ProviderResponse;
 
 import lombok.RequiredArgsConstructor;

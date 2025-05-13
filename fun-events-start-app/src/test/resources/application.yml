@@ -1,3 +1,10 @@
+supply.feed-interval: 60000 # milliseconds
+
+provider:
+  name: xxx
+  url: http://localhost:9090/api/events
+  timeout: 2000 #milliseconds
+
 mongodb: 
   database.name: FunDataBase
   port: 27018

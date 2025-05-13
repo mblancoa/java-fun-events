@@ -14,10 +14,6 @@
 			<groupId>com.fun.events</groupId>
 			<artifactId>fun-events-domain</artifactId>
 		</dependency>
-		<dependency>
-			<groupId>com.fun.events</groupId>
-			<artifactId>fun-events-supply</artifactId>
-		</dependency>
 
 		<dependency>
 			<groupId>org.mapstruct</groupId>

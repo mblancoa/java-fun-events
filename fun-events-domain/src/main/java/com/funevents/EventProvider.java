@@ -1,4 +1,4 @@
-package com.funevents.supply;
+package com.funevents;
 
 import java.util.List;
 

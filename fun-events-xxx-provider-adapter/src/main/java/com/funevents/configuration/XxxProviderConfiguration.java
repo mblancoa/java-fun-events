@@ -1,9 +1,12 @@
 package com.funevents.configuration;
 
+import static com.funevents.configuration.DomainConfiguration.SUPPLY_PROFILE;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Profile;
 import org.springframework.http.client.SimpleClientHttpRequestFactory;
 import org.springframework.oxm.jaxb.Jaxb2Marshaller;
 import org.springframework.web.client.RestTemplate;
@@ -12,6 +15,7 @@ import com.funevents.xxxprovider.EventProviderAdapter;
 import com.funevents.xxxprovider.XxxProviderEventMapper;
 
 @Configuration
+@Profile(SUPPLY_PROFILE)
 public class XxxProviderConfiguration {
 
 	@Value("${provider.name:xxx}")

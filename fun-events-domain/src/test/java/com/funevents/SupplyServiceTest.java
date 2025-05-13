@@ -1,4 +1,4 @@
-package com.funevents.supply;
+package com.funevents;
 
 import static org.mockito.ArgumentMatchers.anyList;
 import static org.mockito.Mockito.mock;
@@ -14,7 +14,9 @@ import org.jeasy.random.EasyRandom;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import com.funevents.EventProvider;
 import com.funevents.EventService;
+import com.funevents.SupplyService;
 import com.funevents.model.Event;
 
 public class SupplyServiceTest {

@@ -17,8 +17,8 @@ import org.springframework.http.client.SimpleClientHttpRequestFactory;
 import org.springframework.oxm.jaxb.Jaxb2Marshaller;
 import org.springframework.web.client.RestTemplate;
 
+import com.funevents.EventProvider;
 import com.funevents.model.Event;
-import com.funevents.supply.EventProvider;
 import com.funevents.xxxprovider.EventProviderAdapter;
 import com.funevents.xxxprovider.XxxProviderEventMapper;
 import com.funevents.xxxprovider.model.ProviderResponse;

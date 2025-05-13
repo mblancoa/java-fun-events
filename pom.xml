@@ -34,8 +34,8 @@
 		<module>fun-events-xxx-provider-adapter</module>
 		<module>fun-events-api</module>
 		<module>fun-events-start-app</module>
-		<module>fun-events-supply</module>
-		<module>fun-events-start-supply</module>
+		
+		
 	</modules>
 
 	<dependencyManagement>
@@ -62,17 +62,7 @@
 			</dependency>
 			<dependency>
 				<groupId>com.fun.events</groupId>
-				<artifactId>fun-events-supply</artifactId>
-				<version>${project.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.fun.events</groupId>
 				<artifactId>fun-events-xxx-provider-adapter</artifactId>
-				<version>${project.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.fun.events</groupId>
-				<artifactId>afun-events-start-supply</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 

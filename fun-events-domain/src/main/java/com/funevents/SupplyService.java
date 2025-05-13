@@ -1,10 +1,9 @@
-package com.funevents.supply;
+package com.funevents;
 
 import java.util.List;
 
 import org.springframework.scheduling.annotation.Scheduled;
 
-import com.funevents.EventService;
 import com.funevents.model.Event;
 
 import lombok.RequiredArgsConstructor;

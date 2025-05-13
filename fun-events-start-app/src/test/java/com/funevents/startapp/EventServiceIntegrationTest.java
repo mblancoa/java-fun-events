@@ -1,5 +1,6 @@
 package com.funevents.startapp;
 
+import static com.funevents.configuration.DomainConfiguration.CONSUMER_PROFILE;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertNull;
@@ -31,7 +32,7 @@ import com.funevents.api.model.EventSummary;
 import com.funevents.model.Event;
 import com.funevents.mongodbrepository.model.EventDB;
 
-@ActiveProfiles({ "test" })
+@ActiveProfiles({ "test", CONSUMER_PROFILE })
 @SpringBootTest(classes = { MongoDBTestConetionConfiguration.class,
 		EventsStartAppApplication.class }, webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 public class EventServiceIntegrationTest {
