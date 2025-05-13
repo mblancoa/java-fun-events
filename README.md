@@ -80,7 +80,14 @@ com.funevents
 
 ### fun-events-supply
 Contains the logic implementation to manage the supply from providers
+
 ```
+com.funevents
+|-- configuration
+|   |-- SupplyConfiguration
+|
+|-- SupplyService            -> implements the supply business logic
+|-- EventProvider            -> defines the provider port to suppy events by http requests
 ```
 
 ### fun-events-xxx-provider-adapter
