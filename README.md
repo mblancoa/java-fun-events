@@ -1,4 +1,5 @@
-# Fun code challenge
+# Fun events project
+![Fun events schema](fun-events-flow.png)
 
 ## Project structure
 Fun events implements a hexagonal architecture and is distributed in several modules:
