@@ -1,0 +1,5 @@
+mongodb: 
+  database.name: FunDataBase
+  port: 27018
+  uri: mongodb://localhost:${mongodb.port}
+  

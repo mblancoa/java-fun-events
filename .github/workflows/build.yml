@@ -1,0 +1,26 @@
+name: Build with Maven
+
+on:
+  push:
+    branches:
+      - master 
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Configure JDK 20
+        uses: actions/setup-java@v3
+        with:
+          java-version: '20'
+          distribution: 'adopt'
+
+      - name: Execute mvn clean install
+        run: mvn clean install
