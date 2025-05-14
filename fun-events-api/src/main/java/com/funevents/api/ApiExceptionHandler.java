@@ -5,6 +5,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.MissingServletRequestParameterException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.servlet.NoHandlerFoundException;
 
 import com.funevents.api.model.Error;
 import com.funevents.api.model.EventResponse;
@@ -24,6 +25,18 @@ public class ApiExceptionHandler {
 		eventResponse.setError(error);
 
 		return ResponseEntity.badRequest().body(eventResponse);
+	}
+
+	@ExceptionHandler(NoHandlerFoundException.class)
+	public ResponseEntity<EventResponse> handle404(final NoHandlerFoundException exception) {
+		final EventResponse eventResponse = new EventResponse();
+		final Error error = new Error();
+		error.setCode(String.valueOf(HttpStatus.NOT_FOUND.value()));
+		error.setMessage("¡Ups! page not found");
+		eventResponse.setError(error);
+
+		log.error("Page not found.", exception);
+		return ResponseEntity.status(HttpStatus.NOT_FOUND).body(eventResponse);
 	}
 
 	@ExceptionHandler(value = Exception.class)

@@ -1,12 +1,18 @@
-supply.feed-interval: 60000 # milliseconds
+supply.feed-interval: 3000 # milliseconds
 
 provider:
   name: xxx
-  url: http://localhost:9090/api/events
-  timeout: 2000 #milliseconds
+  url: http://localhost:9090/events
+  timeout: 1000 #milliseconds
 
 mongodb: 
   database.name: FunDataBase
   port: 27018
   uri: mongodb://localhost:${mongodb.port}
-  
+
+logging:
+  level:
+    root: INFO
+    com.funevents: DEBUG
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} - %logger{36} - %level - %msg%n"  

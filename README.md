@@ -1,4 +1,5 @@
 # Fun events project
+[pipeline status](https://github.com/mblancoa/java-fun-events/actions)
 ![Fun events schema](fun-events-diagram.png)
 
 ## Project structure

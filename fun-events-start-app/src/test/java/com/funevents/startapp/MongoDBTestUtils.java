@@ -32,4 +32,8 @@ public class MongoDBTestUtils {
 	public void cleanCollection(final Class<?> type) {
 		this.mongoTemplate.remove(new Query(), type);
 	}
+
+	public long count(final Class<?> type) {
+		return this.mongoTemplate.count(new Query(), type);
+	}
 }
