@@ -11,7 +11,7 @@ services:
     volumes:
       - ./init-mongo.js:/docker-entrypoint-initdb.d/init-mongo.js:ro
 
-  fever-events-app:
+  fun-events-app:
     image: openjdk:20-jdk
     container_name: events-service
     depends_on:
@@ -19,8 +19,23 @@ services:
     ports:
       - "8080:8080"
     environment:
-      MONGODB_URI: 'mongodb://mongo:27017'  
+      MONGODB_URI: 'mongodb://mongo:27017'
+      SPRING_PROFILES_ACTIVE: 'consumer'
     command: >
-      bash -c "sleep 10 && java -jar /app/fever-events-start-app.jar"
+      bash -c "sleep 10 && java -jar /app/fun-events-start-app.jar"
     volumes:
-      - ./fever-events-start-app.jar:/app/fever-events-start-app.jar
+      - ./fun-events-start-app.jar:/app/fun-events-start-app.jar
+
+  fun-supply-app:
+    image: openjdk:20-jdk
+    container_name: sypply-service
+    depends_on:
+      - mongo
+    environment:
+      MONGODB_URI: 'mongodb://mongo:27017'
+      SPRING_PROFILES_ACTIVE: 'supply'
+      PROVIDER_URL: 'http://xxx-provider/api/events'
+    command: >
+      bash -c "sleep 10 && java -jar /app/fun-events-start-app.jar"
+    volumes:
+      - ./fun-events-start-app.jar:/app/fun-events-start-app.jar

@@ -4,6 +4,7 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 deploy/*.jar
+*.excalidraw
 
 ### STS ###
 .apt_generated

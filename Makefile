@@ -10,7 +10,7 @@ build:
 	mvn clean install
 
 up:
-	docker-compose -f $(TARGET_DIR)/docker-compose.yml up 	
+	docker-compose -f $(TARGET_DIR)/docker-compose.yml up -d	
 	
 .PHONY: deploy
 deploy: prepare up
