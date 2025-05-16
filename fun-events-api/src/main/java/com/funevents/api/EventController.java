@@ -17,14 +17,15 @@ import com.funevents.model.Event;
 
 import lombok.RequiredArgsConstructor;
 
-@RestController()
+@RestController
 @Validated
 @RequiredArgsConstructor(onConstructor = @__({ @org.springframework.beans.factory.annotation.Autowired }))
-public class EventController {
+public class EventController implements EventApiDefinition {
 
 	private final EventService eventService;
 	private final ApiEventMapper mapper = ApiEventMapper.INSTANCE;
 
+	@Override
 	@GetMapping(path = "/search", produces = { MediaType.APPLICATION_JSON_VALUE })
 	public ResponseEntity<EventResponse> search(
 			@RequestParam(name = "starts_at", required = true) @DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME) final LocalDateTime startsAt,

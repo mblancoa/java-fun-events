@@ -25,7 +25,6 @@ import org.springframework.data.mongodb.core.query.Update;
 
 import com.funevents.EventRepository;
 import com.funevents.model.Event;
-import com.funevents.mongodbrepository.EventRepositoryAdapter;
 import com.funevents.mongodbrepository.model.EventDB;
 import com.mongodb.client.result.UpdateResult;
 

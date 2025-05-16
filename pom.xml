@@ -14,8 +14,7 @@
 	<artifactId>fun-events</artifactId>
 	<version>0.0.1</version>
 	<name>fun-events</name>
-	<description>Fun
-		events</description>
+	<description>Fun events</description>
 	<url />
 	<properties>
 		<java.version>20</java.version>
@@ -26,6 +25,9 @@
 		<flapdoodle.version>3.5.4</flapdoodle.version>
 		<java.servlet.version>4.0.1</java.servlet.version>
 		<eclipse.jetty.version>9.4.48.v20220622</eclipse.jetty.version>
+		<swagger.version>2.2.30</swagger.version>
+		<springdoc.version>2.8.8</springdoc.version>
+		<springfox.version>2.9.2</springfox.version>
 	</properties>
 	<packaging>pom</packaging>
 	<modules>
@@ -34,8 +36,8 @@
 		<module>fun-events-xxx-provider-adapter</module>
 		<module>fun-events-api</module>
 		<module>fun-events-start-app</module>
-		
-		
+
+
 	</modules>
 
 	<dependencyManagement>
@@ -71,11 +73,31 @@
 				<artifactId>lombok</artifactId>
 				<version>${lombok.version}</version>
 			</dependency>
-
 			<dependency>
 				<groupId>org.mapstruct</groupId>
 				<artifactId>mapstruct</artifactId>
 				<version>${mapstruct.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>io.swagger.core.v3</groupId>
+				<artifactId>swagger-annotations</artifactId>
+				<version>${swagger.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springdoc</groupId>
+				<artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+				<version>${springdoc.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>io.springfox</groupId>
+				<artifactId>springfox-swagger2</artifactId>
+				<version>${springfox.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>io.springfox</groupId>
+				<artifactId>springfox-swagger-ui</artifactId>
+				<version>${springfox.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>javax.servlet</groupId>

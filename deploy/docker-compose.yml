@@ -1,7 +1,6 @@
 services:
   mongo:
     image: mongo:latest
-    container_name: mongodb
     ports:
       - "27017:27017"
     environment:
@@ -35,7 +34,7 @@ services:
       
   fun-supply-app:
     image: openjdk:20-jdk
-    container_name: sypply-service
+    container_name: supply-service
     depends_on:
       - mongo
       - xxx-provider
