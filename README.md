@@ -58,7 +58,7 @@ com.funevents
 |-- xxxprovider
     |-- model                       -> contains the model to represent then provider's API responses
     |   |-- ProviderResponse
-    |   |-- Outpu
+    |   |-- Output
     |   |-- BasePlan
     |   |-- Plan
     |   |-- Zone
@@ -97,7 +97,7 @@ com.funevents
     |-- application.yml              -> properties file          
 
 ```
-## Logic business descriptionhttp://localhost:8080/swagger-ui/index.htmlhttp://localhost:8080/swagger-ui/index.html
+## Logic business description
 TODO
 
 ## How to run it
