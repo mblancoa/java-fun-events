@@ -1,4 +1,4 @@
-package com.funevents.startapp;
+package com.funevents.start;
 
 import static com.funevents.configuration.DomainConfiguration.CONSUMER_PROFILE;
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -28,6 +28,7 @@ import com.funevents.api.model.EventResponse;
 import com.funevents.api.model.EventSummary;
 import com.funevents.model.Event;
 import com.funevents.mongodbrepository.model.EventDB;
+import com.funevents.start.EventsStartAppApplication;
 
 @ActiveProfiles({ "test", CONSUMER_PROFILE })
 @SpringBootTest(classes = { MongoDBTestConetionConfiguration.class,

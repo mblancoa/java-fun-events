@@ -7,7 +7,7 @@
 		<artifactId>fun-events</artifactId>
 		<version>0.0.1</version>
 	</parent>
-	<artifactId>fun-events-start-app</artifactId>
+	<artifactId>fun-events-start</artifactId>
 	<dependencies>
 		<dependency>
 			<groupId>com.fun.events</groupId>

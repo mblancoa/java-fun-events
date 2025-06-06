@@ -1,4 +1,4 @@
-package com.funevents.startapp;
+package com.funevents.start;
 
 import static com.funevents.configuration.DomainConfiguration.SUPPLY_PROFILE;
 import static com.github.tomakehurst.wiremock.client.WireMock.aResponse;
@@ -26,6 +26,7 @@ import com.fasterxml.jackson.databind.JsonMappingException;
 import com.funevents.api.model.EventResponse;
 import com.funevents.configuration.XxxProviderConfiguration;
 import com.funevents.mongodbrepository.model.EventDB;
+import com.funevents.start.EventsStartAppApplication;
 import com.github.tomakehurst.wiremock.WireMockServer;
 
 @ActiveProfiles({ "test", SUPPLY_PROFILE })

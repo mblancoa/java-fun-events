@@ -1,4 +1,4 @@
-package com.funevents.startapp;
+package com.funevents.start;
 
 import java.util.List;
 

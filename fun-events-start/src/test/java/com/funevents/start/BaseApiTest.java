@@ -1,4 +1,4 @@
-package com.funevents.startapp;
+package com.funevents.start;
 
 import org.springframework.boot.test.web.server.LocalServerPort;
 import org.springframework.web.client.RestTemplate;

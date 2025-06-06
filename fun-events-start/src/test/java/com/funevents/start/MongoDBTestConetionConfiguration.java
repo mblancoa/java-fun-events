@@ -1,4 +1,4 @@
-package com.funevents.startapp;
+package com.funevents.start;
 
 import static org.bson.codecs.configuration.CodecRegistries.fromProviders;
 import static org.bson.codecs.configuration.CodecRegistries.fromRegistries;
