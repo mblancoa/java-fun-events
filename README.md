@@ -11,7 +11,9 @@ fun-events
 |-- fun-events-mongodb-repository-adapter
 |-- fun-events-xxx-provider-adapter
 |-- fun-events-api
-|-- fun-events-start-app
+|-- fun-events-start
+    |-- fun-events-start-app
+    |-- fun-events-start-supply
 ```
 ### fun-events-domain
 Implements the business logic and defines ports to connect with external services
@@ -87,14 +89,25 @@ com.funevents
     |-- ApiEventMapper               -> map objects from API model to domain's model
 ```
 ### fun-events-start-app
-Contains the class to configure and run the main application
+Contains the class to configure and run the user API
 
 ```
 com.funevents
 |-- startapp
     |
-    |-- EventStartAppApplication     -> class based on spring boot to load configuration and run the application
+    |-- EventStartAppApplication     -> class based on spring boot to load configuration and run the user API
     |-- application.yml              -> properties file          
+
+```
+### fun-events-start-supply
+Contains the class to configure and run the supply application
+
+```
+com.funevents
+|-- startapp
+    |
+    |-- EventStartSupplyApplication     -> class based on spring boot to load configuration and run supply application
+    |-- application.yml                 -> properties file          
 
 ```
 ## Logic business description
@@ -105,5 +118,5 @@ TODO
 - 2- Execute `make build` to build the package
 - 3- Execute `make deploy` to run the application with docker-compose
 - 4- Connect to `http://localhost:8080/swagger-ui/index.html`
-- 5- Excecute `make stop`to shutdown the network
+- 5- Excecute `make stop` to shutdown the network
 
