@@ -12,9 +12,11 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.DependsOn;
+import org.springframework.context.annotation.Import;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.test.annotation.DirtiesContext;
 
+import com.funevents.configuration.MongoDBRepositoryConfiguration;
 import com.mongodb.ConnectionString;
 import com.mongodb.MongoClientSettings;
 import com.mongodb.client.MongoClient;
@@ -29,8 +31,9 @@ import de.flapdoodle.embed.process.runtime.Network;
 import jakarta.annotation.PreDestroy;
 
 @Configuration
+@Import(MongoDBRepositoryConfiguration.class)
 @DirtiesContext(classMode = DirtiesContext.ClassMode.AFTER_CLASS)
-public class MongoDBTestConetionConfiguration {
+public class MongoDBTestConectionConfiguration {
 
 	@Value("${mongodb.port:27018}")
 	private int mongodbPort;
