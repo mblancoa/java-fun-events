@@ -30,7 +30,7 @@ import com.funevents.model.Event;
 import com.funevents.mongodbrepository.model.EventDB;
 
 @ActiveProfiles({ "test", CONSUMER_PROFILE })
-@SpringBootTest(classes = { MongoDBTestConetionConfiguration.class,
+@SpringBootTest(classes = { MongoDBTestConectionConfiguration.class,
 		EventsStartAppApplication.class }, webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @DirtiesContext(classMode = DirtiesContext.ClassMode.AFTER_CLASS)
 public class EventServiceIntegrationTest extends BaseApiTest {

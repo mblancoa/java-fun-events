@@ -22,7 +22,7 @@ import com.funevents.mongodbrepository.model.EventDB;
 import com.github.tomakehurst.wiremock.WireMockServer;
 
 @ActiveProfiles({ "test", SUPPLY_PROFILE })
-@SpringBootTest(classes = { MongoDBTestConetionConfiguration.class, EventsStartSupplyApplication.class })
+@SpringBootTest(classes = { MongoDBTestConectionConfiguration.class, EventsStartSupplyApplication.class })
 @DirtiesContext(classMode = DirtiesContext.ClassMode.AFTER_CLASS)
 public class SupplyServiceIntegrationTest {
 

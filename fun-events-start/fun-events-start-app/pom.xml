@@ -25,7 +25,7 @@
 		<!-- Test dependecies-->
 		<dependency>
 			<groupId>com.fun.events</groupId>
-			<artifactId>common-test</artifactId>
+			<artifactId>start-common-test</artifactId>
 			<scope>test</scope>
 		</dependency>
 		<dependency>

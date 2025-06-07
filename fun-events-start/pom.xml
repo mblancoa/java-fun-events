@@ -12,14 +12,14 @@
 	<modules>
 		<module>fun-events-start-app</module>
 		<module>fun-events-start-supply</module>
-		<module>common-test</module>
+		<module>start-common-test</module>
 	</modules>
 
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
 				<groupId>com.fun.events</groupId>
-				<artifactId>common-test</artifactId>
+				<artifactId>start-common-test</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 		</dependencies>
