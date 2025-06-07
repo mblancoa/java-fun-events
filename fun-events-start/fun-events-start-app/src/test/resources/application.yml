@@ -1,0 +1,11 @@
+mongodb: 
+  database.name: FunDataBase
+  port: 27018
+  uri: mongodb://localhost:${mongodb.port}
+
+logging:
+  level:
+    root: INFO
+    com.funevents: DEBUG
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} - %logger{36} - %level - %msg%n"  

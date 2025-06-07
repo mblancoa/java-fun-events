@@ -43,7 +43,7 @@ services:
       SPRING_PROFILES_ACTIVE: 'supply'
       PROVIDER_URL: 'http://xxx-provider/api/events'
     command: >
-      bash -c "sleep 10 && java -jar /app/fun-events-start-app.jar"
+      bash -c "sleep 10 && java -jar /app/fun-events-start-supply.jar"
     volumes:
-      - ./fun-events-start-app.jar:/app/fun-events-start-app.jar
+      - ./fun-events-start-supply.jar:/app/fun-events-start-supply.jar
       

@@ -35,9 +35,7 @@
 		<module>fun-events-mongodb-repository-adapter</module>
 		<module>fun-events-xxx-provider-adapter</module>
 		<module>fun-events-api</module>
-		<module>fun-events-start-app</module>
-
-
+		<module>fun-events-start</module>
 	</modules>
 
 	<dependencyManagement>

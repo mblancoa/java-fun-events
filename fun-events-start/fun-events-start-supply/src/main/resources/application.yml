@@ -1,0 +1,17 @@
+supply.feed-interval: 60000 # milliseconds
+
+provider:
+  name: xxx
+  url: http://xxx-provider/api/events
+  timeout: 2000 #milliseconds
+
+mongodb: 
+  database.name: FunDataBase
+  uri: ${MONGODB_URI}
+
+logging:
+  level:
+    root: INFO
+    com.funevents: DEBUG
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} - %logger{36} - %level - %msg%n"  
