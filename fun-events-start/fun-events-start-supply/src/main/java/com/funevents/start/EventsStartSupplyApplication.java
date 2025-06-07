@@ -33,7 +33,6 @@ public class EventsStartSupplyApplication implements CommandLineRunner {
 
 	@Scheduled(fixedRateString = "${supply.feed-interval:60000}")
 	public void fetchEventsFromProvider() {
-		System.out.println("Estoy aqui");
 		this.supplyService.fetchEventsFromProvider();
 	}
 

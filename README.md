@@ -93,7 +93,7 @@ Contains the class to configure and run the user API
 
 ```
 com.funevents
-|-- startapp
+|-- start
     |
     |-- EventStartAppApplication     -> class based on spring boot to load configuration and run the user API
     |-- application.yml              -> properties file          
@@ -104,7 +104,7 @@ Contains the class to configure and run the supply application
 
 ```
 com.funevents
-|-- startapp
+|-- start
     |
     |-- EventStartSupplyApplication     -> class based on spring boot to load configuration and run supply application
     |-- application.yml                 -> properties file          
